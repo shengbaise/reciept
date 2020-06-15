@@ -1,0 +1,28 @@
+[2020-06-15T17:20:55.628] [INFO] [Default] - GET 404 /favicon.ico 请求参数： {} 响应参数： undefined - ::1 - 2ms
+[2020-06-15T17:21:05.485] [INFO] [Default] - GET 200 /api/test 请求参数： {} 响应参数： {"code":401,"data":null,"msg":"no authorization"} - ::1 - 3ms
+[2020-06-15T17:25:30.145] [INFO] [Default] - GET 200 /api/test 请求参数： {} 响应参数： {"code":401,"data":null,"msg":"no authorization"} - ::1 - 0ms
+[2020-06-15T17:39:03.482] [ERROR] [Default] - Error: MongoNetworkError: failed to connect to server [127.0.0.1:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError'
+}]
+    at NativeConnection.<anonymous> (/Users/chenxu/Desktop/learn/reciept/models/index.js:17:18)
+    at NativeConnection.emit (events.js:311:20)
+    at /Users/chenxu/Desktop/learn/reciept/node_modules/mongoose/lib/connection.js:835:37
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2020-06-15T17:41:16.388] [ERROR] [Default] - Error: MongoNetworkError: failed to connect to server [127.0.0.1:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError'
+}]
+    at NativeConnection.<anonymous> (/Users/chenxu/Desktop/learn/reciept/models/index.js:17:18)
+    at NativeConnection.emit (events.js:311:20)
+    at /Users/chenxu/Desktop/learn/reciept/node_modules/mongoose/lib/connection.js:835:37
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2020-06-15T17:43:53.103] [INFO] [Default] - POST 200 /api/login 请求参数： {} 响应参数： {"code":400,"data":null,"msg":"无效的参数"} - ::1 - 9ms
+[2020-06-15T17:45:12.232] [INFO] [Default] - POST 200 /api/login 请求参数： {} 响应参数： {"code":400,"data":null,"msg":"无效的参数"} - ::1 - 7ms
+[2020-06-15T17:45:55.281] [INFO] [Default] - POST 200 /api/login 请求参数： {} 响应参数： {"code":400,"data":null,"msg":"无效的参数"} - ::1 - 6ms
+[2020-06-15T17:46:18.623] [INFO] [Default] - POST 200 /api/login 请求参数： {} 响应参数： {"code":400,"data":null,"msg":"无效的参数"} - ::1 - 6ms
+[2020-06-15T17:47:31.779] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"934523453"} 响应参数： {"code":200,"msg":"","data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiODI0MjI0MjQyMzM0NSIsImV4cCI6MTU5MjIxODA1MSwiaWF0IjoxNTkyMjE0NDUxfQ.pydDVGNtot3IT0-MTH_-qzXAbjj7as68KIWTWiBDIW0"} - ::1 - 50ms
+[2020-06-15T17:48:29.419] [INFO] [Default] - GET 200 /api/test 请求参数： {} 响应参数： {"code":401,"data":null,"msg":"invalid token"} - ::1 - 2ms
+[2020-06-15T17:49:42.213] [INFO] [Default] - GET 200 /api/test 请求参数： {} 响应参数： {"code":401,"data":null,"msg":"invalid token"} - ::1 - 1ms
+[2020-06-15T17:51:06.072] [INFO] [Default] - GET 200 /api/test 请求参数： {} 响应参数： {"code":401,"data":null,"msg":"invalid token"} - ::1 - 14ms
+[2020-06-15T17:55:47.996] [INFO] [Default] - GET 200 /api/test 请求参数： {} 响应参数： {"code":200,"msg":"","data":{"name":"yishuo","age":25}} - ::1 - 4ms
