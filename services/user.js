@@ -1,6 +1,5 @@
 
-// const User = require('../models/index').getModel('user')
-
+const User = require('../models/index').getModel('user')
 const user = {
     /**
      * @Description: 登录
@@ -9,10 +8,7 @@ const user = {
      * @return: { Object | null }
      */
     async login (userData) {
-        // return await User.findOne(userData)
-        return {
-            _id: '8242242423345'
-        }
+        return await User.findOne(userData)
     }
 }
 

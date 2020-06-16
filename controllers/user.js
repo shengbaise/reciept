@@ -6,7 +6,6 @@ const userServices = require('../services').user
 const { InvalidQueryError } = require('../lib/error')
 const login = {}
 login.login = async (ctx, next) => {
-    console.info(ctx.request.body, 'ctx.request')
     const {userName, password} = ctx.request.body
     if (!userName || !password) {
         throw new InvalidQueryError()

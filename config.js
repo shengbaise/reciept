@@ -8,7 +8,7 @@ module.exports = {
   publicDir: path.resolve(__dirname, './public'),
   logPath: path.resolve(__dirname, './logs/koa-template.log'),
   mongoDB: {
-    database: 'mall',
+    database: 'menu',
     username: 'root',
     password: 'root',
     host: '127.0.0.1',
