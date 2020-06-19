@@ -1,0 +1,103 @@
+[2020-06-16T10:50:05.888] [INFO] [Default] - mongo is opened
+[2020-06-16T10:53:11.918] [INFO] [Default] - POST 200 /api/login 请求参数： {"username":"3","password":"d"} 响应参数： {"code":400,"data":null,"msg":"无效的参数"} - ::1 - 35ms
+[2020-06-16T10:53:29.066] [INFO] [Default] - POST 200 /api/login 请求参数： {"username":"3","password":"8"} 响应参数： {"code":400,"data":null,"msg":"无效的参数"} - ::1 - 1ms
+[2020-06-16T10:53:48.189] [ERROR] [Default] - TypeError: Cannot read property 'findOne' of undefined
+    at Object.login (/Users/chenxu/Desktop/learn/reciept/services/user.js:12:27)
+    at login.login (/Users/chenxu/Desktop/learn/reciept/controllers/user.js:14:37)
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxu/Desktop/learn/reciept/node_modules/koa-static-cache/index.js:39:69
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async loggerMiddleware (/Users/chenxu/Desktop/learn/reciept/middlewares/logger.js:35:3)
+[2020-06-16T10:53:48.190] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"3","password":"8"} 响应参数： {"code":-1,"data":null,"msg":"Cannot read property 'findOne' of undefined"} - ::1 - 2ms
+[2020-06-16T11:46:43.620] [ERROR] [Default] - TypeError: Cannot read property 'findOne' of undefined
+    at Object.login (/Users/chenxu/Desktop/learn/reciept/services/user.js:12:27)
+    at login.login (/Users/chenxu/Desktop/learn/reciept/controllers/user.js:14:37)
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxu/Desktop/learn/reciept/node_modules/koa-static-cache/index.js:39:69
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-bodyparser/index.js:95:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async loggerMiddleware (/Users/chenxu/Desktop/learn/reciept/middlewares/logger.js:35:3)
+[2020-06-16T11:46:43.622] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":-1,"data":null,"msg":"Cannot read property 'findOne' of undefined"} - ::1 - 18ms
+[2020-06-16T11:46:57.338] [INFO] [Default] - mongo is opened
+[2020-06-16T11:47:12.842] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":200,"msg":"用户不存在","data":""} - ::1 - 60ms
+[2020-06-16T11:48:19.357] [INFO] [Default] - mongo is opened
+[2020-06-16T11:48:24.025] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":200,"msg":"用户不存在","data":""} - ::1 - 60ms
+[2020-06-16T11:49:32.221] [INFO] [Default] - mongo is opened
+[2020-06-16T11:49:36.919] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":200,"msg":"用户不存在","data":""} - ::1 - 94ms
+[2020-06-16T11:57:22.199] [INFO] [Default] - mongo is opened
+[2020-06-16T11:57:27.120] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":200,"msg":"用户不存在","data":""} - ::1 - 71ms
+[2020-06-16T11:58:02.763] [INFO] [Default] - mongo is opened
+[2020-06-16T11:58:08.167] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":200,"msg":"用户不存在","data":""} - ::1 - 58ms
+[2020-06-16T12:00:21.668] [INFO] [Default] - mongo is opened
+[2020-06-16T12:00:25.692] [ERROR] [Default] - TypeError: User.find(...).pretty is not a function
+    at Object.login (/Users/chenxu/Desktop/learn/reciept/services/user.js:12:44)
+    at login.login (/Users/chenxu/Desktop/learn/reciept/controllers/user.js:14:37)
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxu/Desktop/learn/reciept/node_modules/koa-static-cache/index.js:39:69
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async loggerMiddleware (/Users/chenxu/Desktop/learn/reciept/middlewares/logger.js:35:3)
+[2020-06-16T12:00:25.707] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":-1,"data":null,"msg":"User.find(...).pretty is not a function"} - ::1 - 56ms
+[2020-06-16T12:00:51.414] [INFO] [Default] - mongo is opened
+[2020-06-16T12:00:57.305] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":200,"msg":"用户不存在","data":""} - ::1 - 131ms
+[2020-06-16T12:03:29.049] [INFO] [Default] - mongo is opened
+[2020-06-16T12:03:34.265] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":200,"msg":"用户不存在","data":""} - ::1 - 68ms
+[2020-06-16T13:35:32.859] [INFO] [Default] - mongo is opened
+[2020-06-16T13:37:01.434] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":200,"msg":"用户不存在","data":""} - ::1 - 83ms
+[2020-06-16T13:37:57.452] [INFO] [Default] - mongo is opened
+[2020-06-16T13:38:02.741] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":200,"msg":"用户不存在","data":""} - ::1 - 62ms
+[2020-06-16T13:42:47.021] [INFO] [Default] - mongo is opened
+[2020-06-16T13:42:52.893] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":200,"msg":"用户不存在","data":""} - ::1 - 57ms
+[2020-06-16T13:55:20.771] [INFO] [Default] - mongo is opened
+[2020-06-16T13:55:29.966] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":200,"msg":"用户不存在","data":""} - ::1 - 58ms
+[2020-06-16T13:56:06.059] [INFO] [Default] - mongo is opened
+[2020-06-16T13:56:12.974] [ERROR] [Default] - TypeError: Cannot read property 'findOne' of undefined
+    at Object.login (/Users/chenxu/Desktop/learn/reciept/services/user.js:12:39)
+    at login.login (/Users/chenxu/Desktop/learn/reciept/controllers/user.js:13:37)
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-compose/index.js:42:32)
+    at /Users/chenxu/Desktop/learn/reciept/node_modules/koa-static-cache/index.js:39:69
+    at dispatch (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async loggerMiddleware (/Users/chenxu/Desktop/learn/reciept/middlewares/logger.js:35:3)
+[2020-06-16T13:56:12.980] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":-1,"data":null,"msg":"Cannot read property 'findOne' of undefined"} - ::1 - 44ms
+[2020-06-16T13:56:43.783] [INFO] [Default] - mongo is opened
+[2020-06-16T13:58:18.988] [INFO] [Default] - mongo is opened
+[2020-06-16T13:58:23.987] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":200,"msg":"用户不存在","data":""} - ::1 - 57ms
+[2020-06-16T13:59:37.857] [INFO] [Default] - mongo is opened
+[2020-06-16T13:59:42.468] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":200,"msg":"","data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiNWVlODQwN2FjMzUxODViODM4YTJkMzdiIiwiZXhwIjoxNTkyMjkwNzgyLCJpYXQiOjE1OTIyODcxODJ9.SgKidzMApq5pGHU-0WWCI9OYYROMwn7T6xjAj_D9B9U"} - ::1 - 103ms
+[2020-06-16T14:01:04.595] [INFO] [Default] - mongo is opened
+[2020-06-16T14:01:11.683] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":200,"msg":"","data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiNWVlODQwN2FjMzUxODViODM4YTJkMzdiIiwiZXhwIjoxNTkyMjkwODcxLCJpYXQiOjE1OTIyODcyNzF9.qF55MSzHd1HNx1_NnbOq1Y0JW2LKnyo4nSTwasm-MzE"} - ::1 - 54ms
+[2020-06-16T14:01:14.278] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":200,"msg":"","data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiNWVlODQwN2FjMzUxODViODM4YTJkMzdiIiwiZXhwIjoxNTkyMjkwODc0LCJpYXQiOjE1OTIyODcyNzR9.AGrrokMHIJk8RENDVaknO6aem7JMa31o_Q9mbD3aXU0"} - ::1 - 7ms
+[2020-06-16T14:01:16.497] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":200,"msg":"","data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiNWVlODQwN2FjMzUxODViODM4YTJkMzdiIiwiZXhwIjoxNTkyMjkwODc2LCJpYXQiOjE1OTIyODcyNzZ9.dLdNBIjDMuBj3Gz71GpdnTChNgtFmhQncEUAfnt412Q"} - ::1 - 5ms
+[2020-06-16T14:21:49.021] [INFO] [Default] - mongo is opened
+[2020-06-16T14:21:53.866] [INFO] [Default] - POST 200 /api/login 请求参数： {"userName":"yishuo","password":"666"} 响应参数： {"code":200,"msg":"","data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiNWVlODY0ZTJjMzUxODViODM4YTJkMzdjIiwiZXhwIjoxNTkyMjkyMTEzLCJpYXQiOjE1OTIyODg1MTN9.5_w2y2PnFEhiv4-3kWoZIHXBUCFOiNSB_Ks8gV4BUPk"} - ::1 - 61ms
