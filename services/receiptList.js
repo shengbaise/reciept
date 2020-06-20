@@ -11,25 +11,16 @@ const receiptList = {
         let totalPage = 0
         const keyword = fuzzy.replace(/([\^\$\(\)\*\+\?\.\\\|\[\]\{\}])/g, "\\$1");
         const reg = new RegExp(keyword, 'i')
-        ReceiptList.countDocuments({
+        const query =  ReceiptList.find({
             '$or':[{'title': {$regex: reg}},
             {'desc': {$regex: reg}},
             {'author': {$regex: reg}}]
-        }, (err, num) => {
-            if (err) {
-                console.info(err)
-                return
-            }
-            totalPage = num
-            console.info(num, 'fggfgfg')
         })
-        console.info(totalPage, 'totalPage')
+        const list = await query.skip((current -1)*size).limit(size*1)
+        await query.countDocuments({}, (err, num) => {
+            totalPage = num
+        })
         const totalSize = Math.ceil(totalPage / size)
-        const list = await ReceiptList.find({
-            '$or':[{'title': {$regex: reg}},
-            {'desc': {$regex: reg}},
-            {'author': {$regex: reg}}]
-        }).skip((current -1)*size).limit(size*1)
         return {
             list,
             totalPage,
