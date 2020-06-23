@@ -1,0 +1,45 @@
+[2020-06-20T10:52:52.211] [INFO] [Default] - mongo is opened
+[2020-06-20T10:52:57.776] [ERROR] [Default] - TypeError: query.skip is not a function
+    at Object.getReceiptList (/Users/chenxu/Desktop/learn/reciept/services/receiptList.js:19:28)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async receiptList.receiptList (/Users/chenxu/Desktop/learn/reciept/controllers/receiptList.js:10:18)
+    at async /Users/chenxu/Desktop/learn/reciept/node_modules/koa-static-cache/index.js:53:36
+    at async bodyParser (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-bodyparser/index.js:95:5)
+    at async loggerMiddleware (/Users/chenxu/Desktop/learn/reciept/middlewares/logger.js:35:3)
+[2020-06-20T10:52:57.778] [INFO] [Default] - GET 200 /api/receipt-list?current=1&size=12&fuzzy=%E7%83%A4%E8%82%89 请求参数： {} 响应参数： {"code":-1,"data":null,"msg":"query.skip is not a function"} - ::ffff:172.16.6.11 - 39ms
+[2020-06-20T10:54:02.757] [INFO] [Default] - mongo is opened
+[2020-06-20T10:55:55.167] [INFO] [Default] - mongo is opened
+[2020-06-20T10:57:30.221] [INFO] [Default] - mongo is opened
+[2020-06-20T10:58:41.445] [INFO] [Default] - mongo is opened
+[2020-06-20T10:58:45.207] [INFO] [Default] - GET 404 /api/receipt-list?current=1&size=12&fuzzy=%E7%83%A4%E8%82%89 请求参数： {} 响应参数： undefined - ::ffff:172.16.6.11 - 69ms
+[2020-06-20T11:00:02.252] [INFO] [Default] - mongo is opened
+[2020-06-20T11:01:45.944] [INFO] [Default] - mongo is opened
+[2020-06-20T11:01:51.334] [ERROR] [Default] - ReferenceError: page is not defined
+    at Object.getReceiptList (/Users/chenxu/Desktop/learn/reciept/services/receiptList.js:28:50)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async receiptList.receiptList (/Users/chenxu/Desktop/learn/reciept/controllers/receiptList.js:10:18)
+    at async /Users/chenxu/Desktop/learn/reciept/node_modules/koa-static-cache/index.js:53:36
+    at async bodyParser (/Users/chenxu/Desktop/learn/reciept/node_modules/koa-bodyparser/index.js:95:5)
+    at async loggerMiddleware (/Users/chenxu/Desktop/learn/reciept/middlewares/logger.js:35:3)
+[2020-06-20T11:01:51.335] [INFO] [Default] - GET 200 /api/receipt-list?current=1&size=12&fuzzy=%E7%83%A4%E8%82%89 请求参数： {} 响应参数： {"code":-1,"data":null,"msg":"page is not defined"} - ::ffff:172.16.6.11 - 49ms
+[2020-06-20T11:02:14.696] [INFO] [Default] - mongo is opened
+[2020-06-20T11:03:17.263] [INFO] [Default] - mongo is opened
+[2020-06-20T11:03:22.839] [INFO] [Default] - GET 200 /api/receipt-list?current=1&size=12&fuzzy=%E7%83%A4%E8%82%89 请求参数： {} 响应参数： {"code":200,"msg":"","data":{"list":[{"_id":"5eeb11db66f0ae1a5c2975df","imgUrl":"http://pic.ecook.cn/web/262327370.jpg!s4","id":"262327372","title":"韩式南瓜粥","desc":"每次去韩国烤肉店 都会被餐前每人送一份的韩式南瓜粥惊艳到 有时候会喝两碗 感觉每个南瓜粥就吃不了烤肉 那个味道咸咸甜甜的很香浓 就自己尝试做了一下\n","author":"钱多多的小厨房","type":1}],"totalPage":0,"totalSize":0,"size":12,"page":1}} - ::ffff:172.16.6.11 - 71ms
+[2020-06-20T11:04:06.012] [INFO] [Default] - mongo is opened
+[2020-06-20T11:04:09.382] [INFO] [Default] - GET 200 /api/receipt-list?current=1&size=12&fuzzy=%E7%83%A4%E8%82%89 请求参数： {} 响应参数： {"code":200,"msg":"","data":{"list":[{"_id":"5eeb11db66f0ae1a5c2975df","imgUrl":"http://pic.ecook.cn/web/262327370.jpg!s4","id":"262327372","title":"韩式南瓜粥","desc":"每次去韩国烤肉店 都会被餐前每人送一份的韩式南瓜粥惊艳到 有时候会喝两碗 感觉每个南瓜粥就吃不了烤肉 那个味道咸咸甜甜的很香浓 就自己尝试做了一下\n","author":"钱多多的小厨房","type":1}],"totalPage":1,"totalSize":1,"size":12,"page":1}} - ::ffff:172.16.6.11 - 57ms
+[2020-06-20T11:47:42.173] [INFO] [Default] - mongo is opened
+[2020-06-20T11:47:51.671] [INFO] [Default] - GET 404 /api/receipt-list?current=1&size=1i2&fuzzy=%E7%83%A4%E8%82%89 请求参数： {} 响应参数： undefined - ::ffff:172.16.6.11 - 5ms
+[2020-06-20T11:49:37.693] [INFO] [Default] - mongo is opened
+[2020-06-20T11:49:45.895] [INFO] [Default] - GET 404 /api/receipt-list?current=1&size=1i2&fuzzy=%E7%83%A4%E8%82%89 请求参数： {} 响应参数： undefined - ::ffff:172.16.6.11 - 5ms
+[2020-06-20T11:51:38.509] [INFO] [Default] - mongo is opened
+[2020-06-20T11:51:42.854] [INFO] [Default] - GET 200 /api/receipt-list?current=1&size=1i2&fuzzy=%E7%83%A4%E8%82%89 请求参数： {} 响应参数： {"code":"ERR_ASSERTION","data":null,"msg":"status code must be a number"} - ::ffff:172.16.6.11 - 10ms
+[2020-06-20T11:52:09.989] [INFO] [Default] - mongo is opened
+[2020-06-20T11:52:13.257] [INFO] [Default] - GET 400 /api/receipt-list?current=1&size=1i2&fuzzy=%E7%83%A4%E8%82%89 请求参数： {} 响应参数： {"code":200,"msg":"current值不合法","data":null} - ::ffff:172.16.6.11 - 10ms
+[2020-06-20T11:52:52.579] [INFO] [Default] - mongo is opened
+[2020-06-20T11:52:58.779] [INFO] [Default] - GET 200 /api/receipt-list?current=1&size=1i2&fuzzy=%E7%83%A4%E8%82%89 请求参数： {} 响应参数： {"code":200,"msg":"current值不合法","data":null} - ::ffff:172.16.6.11 - 8ms
+[2020-06-20T11:56:41.895] [INFO] [Default] - mongo is opened
+[2020-06-20T11:56:45.236] [INFO] [Default] - GET 200 /api/receipt-list?current=1&size=1i2&fuzzy=%E7%83%A4%E8%82%89 请求参数： {} 响应参数： {"code":400,"data":null,"msg":"无效的参数"} - ::ffff:172.16.6.11 - 5ms
+[2020-06-20T12:00:08.040] [INFO] [Default] - mongo is opened
+[2020-06-20T12:00:12.197] [INFO] [Default] - GET 200 /api/receipt-list?current=1&size=1i2&fuzzy=%E7%83%A4%E8%82%89 请求参数： {} 响应参数： {"code":400,"data":null,"msg":"无效的参数"} - ::ffff:172.16.6.11 - 9ms
+[2020-06-20T12:00:36.273] [INFO] [Default] - GET 200 /api/receipt-list?current=1u&size=12&fuzzy=%E7%83%A4%E8%82%89 请求参数： {} 响应参数： {"code":400,"data":null,"msg":"无效的参数"} - ::ffff:172.16.6.11 - 2ms
+[2020-06-20T12:00:44.634] [INFO] [Default] - GET 200 /api/receipt-list?size=12&fuzzy=%E7%83%A4%E8%82%89 请求参数： {} 响应参数： {"code":400,"data":null,"msg":"无效的参数"} - ::ffff:172.16.6.11 - 2ms

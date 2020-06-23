@@ -8,8 +8,7 @@ const receiptList = {}
 receiptList.receiptList = async (ctx, next) => {
     const query = ctx.request.query
     const {current, size} = query
-    console.info(ctx, 'ggggg')
-    if (!query || /^[1-9]+$/.test(current) || /^[1-9]+$/.test(size)) {
+    if (!query || !/^[1-9]+$/.test(current) || !/^[1-9]+$/.test(size)) {
         throw new InvalidQueryError()
     }
     const list = await receiptServices.getReceiptList(query)
